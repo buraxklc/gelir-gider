@@ -1,0 +1,690 @@
+/* Karanlık Tema - TAM VERSİYON */
+[data-theme="dark"] {
+    --bg-color: #121212;
+    --bg-secondary: #1e1e1e;
+    --bg-tertiary: #2d2d2d;
+    --card-bg: #1e1e1e;
+    --card-header-bg: #2d2d2d;
+    --text-color: #ffffff;
+    --text-secondary: #b0b0b0;
+    --text-muted: #888888;
+    --border-color: #404040;
+    --border-light: #333333;
+    --navbar-bg: #1a1a1a;
+    --input-bg: #2d2d2d;
+    --input-border: #404040;
+    --table-stripe: #252525;
+    --table-hover: #2a2a2a;
+    --dropdown-bg: #1e1e1e;
+    --modal-bg: #1e1e1e;
+}
+
+/* Genel Body ve HTML */
+[data-theme="dark"] body {
+    background-color: var(--bg-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] html {
+    background-color: var(--bg-color) !important;
+}
+
+/* Navbar */
+[data-theme="dark"] .navbar {
+    background-color: var(--navbar-bg) !important;
+    border-bottom: 1px solid var(--border-color);
+}
+
+[data-theme="dark"] .navbar-brand,
+[data-theme="dark"] .navbar-nav .nav-link {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link:hover {
+    color: var(--primary-color) !important;
+    background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+[data-theme="dark"] .navbar-nav .nav-link.active {
+    background-color: var(--primary-color) !important;
+    color: white !important;
+}
+
+/* Kartlar */
+[data-theme="dark"] .card {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .card-header {
+    background-color: var(--card-header-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .card-body {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .card-title {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .card-text {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .card-footer {
+    background-color: var(--card-header-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+/* Form Elemanları */
+[data-theme="dark"] .form-control,
+[data-theme="dark"] .form-select {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .form-control::placeholder {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .form-control:focus,
+[data-theme="dark"] .form-select:focus {
+    background-color: var(--input-bg) !important;
+    border-color: var(--primary-color) !important;
+    color: var(--text-color) !important;
+    box-shadow: 0 0 0 0.2rem rgba(79, 70, 229, 0.25) !important;
+}
+
+[data-theme="dark"] .form-label {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .form-text {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .input-group-text {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+    color: var(--text-color) !important;
+}
+
+/* Tablolar */
+[data-theme="dark"] .table {
+    color: var(--text-color) !important;
+    background-color: transparent !important;
+}
+
+[data-theme="dark"] .table thead th {
+    background-color: var(--card-header-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table tbody td {
+    border-color: var(--border-light) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table tbody tr:hover {
+    background-color: var(--table-hover) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .table-striped > tbody > tr:nth-of-type(odd) > td {
+    background-color: var(--table-stripe) !important;
+}
+
+[data-theme="dark"] .table-responsive {
+    background-color: var(--card-bg) !important;
+}
+
+/* Modal */
+[data-theme="dark"] .modal-content {
+    background-color: var(--modal-bg) !important;
+    color: var(--text-color) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .modal-header {
+    background-color: var(--card-header-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .modal-body {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .modal-footer {
+    background-color: var(--card-header-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .modal-title {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+/* Dropdown */
+[data-theme="dark"] .dropdown-menu {
+    background-color: var(--dropdown-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .dropdown-item {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .dropdown-item:hover,
+[data-theme="dark"] .dropdown-item:focus {
+    background-color: rgba(255, 255, 255, 0.1) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .dropdown-divider {
+    border-color: var(--border-color) !important;
+}
+
+/* Alert */
+[data-theme="dark"] .alert {
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .alert-danger {
+    background-color: rgba(220, 53, 69, 0.2) !important;
+    border-color: rgba(220, 53, 69, 0.3) !important;
+    color: #f8d7da !important;
+}
+
+[data-theme="dark"] .alert-success {
+    background-color: rgba(25, 135, 84, 0.2) !important;
+    border-color: rgba(25, 135, 84, 0.3) !important;
+    color: #d1e7dd !important;
+}
+
+[data-theme="dark"] .alert-info {
+    background-color: rgba(13, 202, 240, 0.2) !important;
+    border-color: rgba(13, 202, 240, 0.3) !important;
+    color: #cff4fc !important;
+}
+
+[data-theme="dark"] .alert-warning {
+    background-color: rgba(255, 193, 7, 0.2) !important;
+    border-color: rgba(255, 193, 7, 0.3) !important;
+    color: #ffecb5 !important;
+}
+
+/* Badge */
+[data-theme="dark"] .badge {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .badge.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .badge.bg-success {
+    background-color: #198754 !important;
+}
+
+[data-theme="dark"] .badge.bg-danger {
+    background-color: #dc3545 !important;
+}
+
+[data-theme="dark"] .badge.bg-warning {
+    background-color: #ffc107 !important;
+    color: #000 !important;
+}
+
+[data-theme="dark"] .badge.bg-info {
+    background-color: #0dcaf0 !important;
+    color: #000 !important;
+}
+
+[data-theme="dark"] .badge.bg-secondary {
+    background-color: #6c757d !important;
+}
+
+/* Butonlar */
+[data-theme="dark"] .btn-light {
+    background-color: var(--bg-tertiary) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-light:hover {
+    background-color: var(--bg-secondary) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary {
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-secondary:hover {
+    background-color: var(--bg-tertiary) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .btn-outline-primary:hover {
+    color: white !important;
+}
+
+[data-theme="dark"] .btn-outline-danger:hover {
+    color: white !important;
+}
+
+/* Text Renkler */
+[data-theme="dark"] .text-muted {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .text-secondary {
+    color: var(--text-secondary) !important;
+}
+
+[data-theme="dark"] .text-dark {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .text-body {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .text-black-50 {
+    color: var(--text-muted) !important;
+}
+
+/* List Group */
+[data-theme="dark"] .list-group-item {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .list-group-item:hover {
+    background-color: var(--table-hover) !important;
+}
+
+/* Pagination */
+[data-theme="dark"] .page-link {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .page-link:hover {
+    background-color: var(--table-hover) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .page-item.active .page-link {
+    background-color: var(--primary-color) !important;
+    border-color: var(--primary-color) !important;
+}
+
+/* Breadcrumb */
+[data-theme="dark"] .breadcrumb {
+    background-color: var(--card-bg) !important;
+}
+
+[data-theme="dark"] .breadcrumb-item a {
+    color: var(--primary-color) !important;
+}
+
+[data-theme="dark"] .breadcrumb-item.active {
+    color: var(--text-muted) !important;
+}
+
+/* Progress */
+[data-theme="dark"] .progress {
+    background-color: var(--bg-tertiary) !important;
+}
+
+/* Container ve Layout */
+[data-theme="dark"] .container,
+[data-theme="dark"] .container-fluid {
+    background-color: transparent !important;
+}
+
+/* Footer */
+[data-theme="dark"] footer {
+    background-color: var(--navbar-bg) !important;
+    color: var(--text-color) !important;
+    border-top: 1px solid var(--border-color) !important;
+}
+
+/* Modern Arama Kutusu Karanlık Tema */
+[data-theme="dark"] .modern-search-container .search-wrapper {
+    background: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .modern-search-input {
+    color: var(--text-color) !important;
+    background: transparent !important;
+}
+
+[data-theme="dark"] .modern-search-input::placeholder {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .search-icon {
+    color: var(--text-muted) !important;
+}
+
+[data-theme="dark"] .search-badge {
+    background: linear-gradient(135deg, #4f46e5, #7c3aed) !important;
+    color: white !important;
+}
+
+/* Nav Tabs */
+[data-theme="dark"] .nav-tabs {
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .nav-tabs .nav-link {
+    color: var(--text-color) !important;
+    border-color: transparent !important;
+}
+
+[data-theme="dark"] .nav-tabs .nav-link:hover {
+    border-color: var(--border-color) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .nav-tabs .nav-link.active {
+    background-color: var(--card-bg) !important;
+    border-color: var(--border-color) !important;
+    color: var(--primary-color) !important;
+}
+
+/* Scrollbar */
+[data-theme="dark"] ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-track {
+    background: var(--bg-secondary);
+    border-radius: 5px;
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb {
+    background: var(--border-color);
+    border-radius: 5px;
+    border: 2px solid var(--bg-secondary);
+}
+
+[data-theme="dark"] ::-webkit-scrollbar-thumb:hover {
+    background: #555555;
+}
+
+/* Profil Sayfası Özel */
+[data-theme="dark"] .profile-header {
+    background: linear-gradient(135deg, #4F46E5 0%, #2D3A8C 100%) !important;
+}
+
+[data-theme="dark"] .bg-light {
+    background-color: var(--card-header-bg) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .preview-card.light-preview {
+    border-color: var(--border-color) !important;
+}
+
+/* İstatistik Kartları */
+[data-theme="dark"] .stat-card {
+    background-color: var(--card-bg) !important;
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .stat-card h2,
+[data-theme="dark"] .stat-card h3,
+[data-theme="dark"] .stat-card h4,
+[data-theme="dark"] .stat-card h5 {
+    color: var(--text-color) !important;
+}
+
+/* Hover Effects */
+[data-theme="dark"] .hover-scale:hover {
+    background-color: var(--table-hover) !important;
+}
+
+/* Border Utilities */
+[data-theme="dark"] .border {
+    border-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .border-top {
+    border-top-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .border-bottom {
+    border-bottom-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .border-left {
+    border-left-color: var(--border-color) !important;
+}
+
+[data-theme="dark"] .border-right {
+    border-right-color: var(--border-color) !important;
+}
+
+/* Smooth transition for theme switching */
+* {
+    transition: background-color 0.3s ease, color 0.3s ease, border-color 0.3s ease;
+}
+/* Tema Önizleme Kartları Karanlık Modda Düzeltme */
+[data-theme="dark"] .preview-card {
+    border-color: var(--border-color) !important;
+}
+
+/* Açık tema önizlemesi - karanlık modda bile görünür olsun */
+[data-theme="dark"] .light-preview {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+    border-color: #e5e7eb !important;
+}
+
+[data-theme="dark"] .light-preview .preview-header {
+    background: #f8f9fa !important;
+    color: #1f2937 !important;
+    border-bottom: 1px solid #e5e7eb !important;
+}
+
+[data-theme="dark"] .light-preview .preview-body {
+    background: #ffffff !important;
+    color: #1f2937 !important;
+}
+
+[data-theme="dark"] .light-preview .preview-text {
+    color: #6b7280 !important;
+}
+
+[data-theme="dark"] .light-preview .preview-button {
+    background: #4f46e5 !important;
+    color: white !important;
+}
+
+[data-theme="dark"] .light-preview .preview-card-small {
+    background: #f1f5f9 !important;
+    border: 1px solid #e2e8f0 !important;
+}
+
+[data-theme="dark"] .light-preview .preview-card-content {
+    color: #475569 !important;
+}
+
+/* Karanlık tema önizlemesi */
+[data-theme="dark"] .dark-preview {
+    background: #1e1e1e !important;
+    color: #e5e5e5 !important;
+    border-color: #404040 !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-header {
+    background: #2d2d2d !important;
+    color: #e5e5e5 !important;
+    border-bottom: 1px solid #404040 !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-body {
+    background: #1e1e1e !important;
+    color: #e5e5e5 !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-text {
+    color: #a0a0a0 !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-button {
+    background: #4f46e5 !important;
+    color: white !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-card-small {
+    background: #3a3a3a !important;
+    border: 1px solid #404040 !important;
+}
+
+[data-theme="dark"] .dark-preview .preview-card-content {
+    color: #d1d5db !important;
+}
+
+/* Tema avantajları listesi */
+[data-theme="dark"] .theme-benefits ul li {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .theme-benefits h6 {
+    color: var(--text-color) !important;
+}
+
+/* Form checkbox ve label */
+[data-theme="dark"] .form-check-label {
+    color: var(--text-color) !important;
+}
+
+[data-theme="dark"] .form-check-input {
+    background-color: var(--input-bg) !important;
+    border-color: var(--input-border) !important;
+}
+
+[data-theme="dark"] .form-check-input:checked {
+    background-color: #4f46e5 !important;
+    border-color: #4f46e5 !important;
+}
+/* Card header text renkleri - Gece modu */
+[data-theme="dark"] .card-header h5,
+[data-theme="dark"] .card-header .card-title {
+    color: #ffffff !important;
+}
+
+/* Card header içindeki diğer metin elementleri için de geçerli olsun */
+[data-theme="dark"] .card-header p,
+[data-theme="dark"] .card-header span,
+[data-theme="dark"] .card-header div {
+    color: rgba(255, 255, 255, 0.8) !important;
+}
+/* Profil avatarı için gece modu düzeltmesi */
+[data-theme="dark"] .profile-avatar {
+    background-color: #3a3a3a !important; /* Koyu arka plan */
+    color: #ffffff !important; /* Beyaz ikon rengi */
+}
+
+[data-theme="dark"] .profile-avatar i {
+    color: #ffffff !important; /* İkonun rengini beyaz yapar */
+}
+
+/* Profil header için gelişmiş topografik desen - Gece Modu */
+[data-theme="dark"] .profile-header {
+    background: linear-gradient(135deg, #111827 0%, #1f2937 50%, #374151 100%) !important;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+
+/* İçeriği desenin üzerinde tut */
+[data-theme="dark"] .profile-header > * {
+    position: relative;
+    z-index: 10;
+}
+
+/* Ana topografik desen */
+[data-theme="dark"] .profile-header::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600'%3E%3Cdefs%3E%3ClinearGradient id='grad' x1='0%25' y1='0%25' x2='100%25' y2='0%25'%3E%3Cstop offset='0%25' stop-color='%234F46E5' stop-opacity='0.1'/%3E%3Cstop offset='100%25' stop-color='%23818CF8' stop-opacity='0.1'/%3E%3C/linearGradient%3E%3C/defs%3E%3Cpath fill='url(%23grad)' d='M0,224L40,213.3C80,203,160,181,240,181.3C320,181,400,203,480,224C560,245,640,267,720,261.3C800,256,880,224,960,218.7C1040,213,1120,235,1160,245.3L1200,256L1200,0L1160,0C1120,0,1040,0,960,0C880,0,800,0,720,0C640,0,560,0,480,0C400,0,320,0,240,0C160,0,80,0,40,0L0,0Z'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.07)' stroke-width='1' d='M0,50 C150,80 300,20 450,40 C600,60 750,120 900,100 C1050,80 1125,60 1200,70'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.07)' stroke-width='1' d='M0,100 C150,130 300,70 450,90 C600,110 750,170 900,150 C1050,130 1125,110 1200,120'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.07)' stroke-width='1' d='M0,150 C150,180 300,120 450,140 C600,160 750,220 900,200 C1050,180 1125,160 1200,170'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.07)' stroke-width='1' d='M0,200 C150,230 300,170 450,190 C600,210 750,270 900,250 C1050,230 1125,210 1200,220'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.05)' stroke-width='1.5' d='M0,250 C150,280 300,220 450,240 C600,260 750,320 900,300 C1050,280 1125,260 1200,270'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.05)' stroke-width='1.5' d='M0,300 C150,330 300,270 450,290 C600,310 750,370 900,350 C1050,330 1125,310 1200,320'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.05)' stroke-width='1.5' d='M0,350 C150,380 300,320 450,340 C600,360 750,420 900,400 C1050,380 1125,360 1200,370'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.05)' stroke-width='1.5' d='M0,400 C150,430 300,370 450,390 C600,410 750,470 900,450 C1050,430 1125,410 1200,420'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.03)' stroke-width='2' d='M0,450 C150,480 300,420 450,440 C600,460 750,520 900,500 C1050,480 1125,460 1200,470'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.03)' stroke-width='2' d='M0,500 C150,530 300,470 450,490 C600,510 750,570 900,550 C1050,530 1125,510 1200,520'/%3E%3Cpath fill='none' stroke='rgba(255, 255, 255, 0.03)' stroke-width='2' d='M0,550 C150,580 300,520 450,540 C600,560 750,620 900,600 C1050,580 1125,560 1200,570'/%3E%3C/svg%3E");
+    background-size: cover;
+    background-position: center;
+    opacity: 0.9;
+    z-index: 2;
+}
+
+/* İkincil desen katmanı (derinlik için) */
+[data-theme="dark"] .profile-header::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='1200' height='600' viewBox='0 0 1200 600'%3E%3Cpath fill='none' stroke='rgba(79, 70, 229, 0.1)' stroke-width='1.5' d='M0,100 C200,150 400,50 600,80 C800,110 1000,150 1200,130'/%3E%3Cpath fill='none' stroke='rgba(79, 70, 229, 0.08)' stroke-width='1.5' d='M0,200 C200,250 400,150 600,180 C800,210 1000,250 1200,230'/%3E%3Cpath fill='none' stroke='rgba(79, 70, 229, 0.08)' stroke-width='1.5' d='M0,300 C200,350 400,250 600,280 C800,310 1000,350 1200,330'/%3E%3Cpath fill='none' stroke='rgba(79, 70, 229, 0.05)' stroke-width='1.5' d='M0,400 C200,450 400,350 600,380 C800,410 1000,450 1200,430'/%3E%3Cpath fill='none' stroke='rgba(79, 70, 229, 0.05)' stroke-width='1.5' d='M0,500 C200,550 400,450 600,480 C800,510 1000,550 1200,530'/%3E%3C/svg%3E");
+    background-size: 120% 120%;
+    background-position: center;
+    filter: blur(2px);
+    z-index: 3;
+    animation: float 15s ease-in-out infinite alternate;
+}
+
+/* Üst parlama efekti */
+[data-theme="dark"] .profile-header > div::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle at 30% 30%, rgba(79, 70, 229, 0.15), transparent 70%);
+    z-index: 1;
+}
+
+/* Hafif dalga animasyonu */
+@keyframes float {
+    0% {
+        background-position: 0% 0%;
+    }
+    100% {
+        background-position: 100% 100%;
+    }
+}
+
+/* Profil avatarı için düzeltme */
+[data-theme="dark"] .profile-avatar {
+    background-color: rgba(20, 24, 44, 0.8) !important;
+    color: #ffffff !important;
+    box-shadow: 0 0 15px rgba(79, 70, 229, 0.3);
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+[data-theme="dark"] .profile-avatar i {
+    color: rgba(255, 255, 255, 0.9) !important;
+}
